@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parse_utils.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabdel-f <rabdel-f@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/16 12:06:56 by rabdel-f          #+#    #+#             */
+/*   Updated: 2025/01/16 12:06:57 by rabdel-f         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../includes/cub.h"
 
@@ -61,22 +72,24 @@ void	check_filename(t_game *cub3d, char *file, int mode)
 		exit_error(cub3d, ERR_XPM_EXT);
 }
 
-//check_filename() function verifies if a given filename (file) meets specific criteria
-//based on its extension and the mode (CUB or XPM). If the filename is
-//invalid, it handles the error appropriately, including cleanup if necessary.
+//check_filename() function verifies if a given filename
+//(file) meets specific criteria based on its extension 
+//and the mode (CUB or XPM). If the filename is invalid,
+//it handles the error appropriately, including cleanup if necessary.
 //
-//The get_value() function is responsible for extracting a substring from the given
-//line, starting from a specified index i and continuing based on the provided mode.
-//The function handles different modes (such as TEXTURE or COLOR) and returns the 
-//extracted value as a string.
+//The get_value() function is responsible for extracting a substring
+//from the given line, starting from a specified index i and continuing
+//based on the provided mode. The function handles different modes 
+//(such as TEXTURE or COLOR) and returns the extracted value as a string.
 //
-//The check_texture_file() function is responsible for validating a texture file,
-//specifically ensuring the file has the correct extension and can be opened
-//successfully.
+//The check_texture_file() function is responsible for validating a
+//texture file, specifically ensuring the file has the correct extension
+//and can be opened successfully.
 //
 //have_number() function checks if all chars are digits
 //
-//have_all_params() function checks if all required parameters have been set in the
-//cub3d structure. It returns YES if all the necessary parameters (textures for each
-//side, floor and ceiling colors, and the map start flag) are initialized, and NO if
+//have_all_params() function checks if all required parameters
+//have been set in the cub3d structure. It returns YES if all
+//the necessary parameters (textures for each side, floor and
+//ceiling colors, and the map start flag) are initialized, and NO if
 //any of them are missing.

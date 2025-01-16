@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   calc_dda.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabdel-f <rabdel-f@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/16 12:07:11 by rabdel-f          #+#    #+#             */
+/*   Updated: 2025/01/16 12:07:13 by rabdel-f         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../includes/cub.h"
 
@@ -92,27 +103,45 @@ void	calculate_height_wall(t_game *game)
 		p->tall_of_wall_y2 = game->game_h -1;
 	find_out_text_x(p);
 }
-// get_distance() function calculates the initial distance to the
-//first intersection of a ray with either a vertical or horizontal
-//grid line. This is a key part of the Digital Differential Analysis (DDA) algorithm,
-//used in raycasting to determine the points where a ray intersects a 2D grid.
+// get_distance() function calculates
+//the initial distance to the
+//first intersection of a ray with 
+//either a vertical or horizontal
+//grid line. This is a key part of
+//the Digital Differential Analysis (DDA) algorithm,
+//used in raycasting to determine the 
+//points where a ray intersects a 2D grid.
 //
-// calculate_delta() function is an essential part of the raycasting process,
-//preparing the data necessary for the Digital Differential Analysis (DDA) algorithm. 
-//It calculates the distances the ray must travel to cross grid lines in the x and y
-//directions, as well as the initial distances to the nearest grid line. 
-//Additionally, it determines the stepping direction based on the ray's direction.
+// calculate_delta() function is an essential part of
+//the raycasting process,
+//preparing the data necessary for the Digital
+//Differential Analysis (DDA) algorithm. 
+//It calculates the distances the ray must travel to
+//cross grid lines in the x and y
+//directions, as well as the initial distances to the
+//nearest grid line. 
+//Additionally, it determines the stepping direction
+//based on the ray's direction.
 //
-// dda() function is a critical part of the raycasting process in a grid-based 2D game.
-//It employs the Digital Differential Analysis (DDA) algorithm to trace the path of a ray
-//from the player's position through the game map, stopping when the ray intersects a wall 
+// dda() function is a critical part of the raycasting
+//process in a grid-based 2D game.
+//It employs the Digital Differential Analysis (DDA)
+//algorithm to trace the path of a ray
+//from the player's position through the game map,
+//stopping when the ray intersects a wall 
 //(represented by the '1' character in the map array).
 //
-// calculate_distance() determines the distance from the player to the wall
-//based on the ray's direction and which side (vertical or horizontal) the ray is
-//currently colliding with. This is a crucial part of raycasting algorithms to calculate
-//the precise distance of obstacles (like walls) in the player's path.
+// calculate_distance() determines the 
+//distance from the player to the wall
+//based on the ray's direction and which side
+//(vertical or horizontal) the ray is
+//currently colliding with. This is a crucial
+//part of raycasting algorithms to calculate
+//the precise distance of obstacles (like walls)
+//in the player's path.
 //
-//The function calculates the height of the wall segment that corresponds to the current ray.
-//This is important for simulating perspective, where closer walls appear taller and farther 
+//The function calculates the height of the wall
+//segment that corresponds to the current ray.
+//This is important for simulating perspective, where 
+//closer walls appear taller and farther 
 //walls appear shorter.

@@ -1,12 +1,11 @@
 
 NAME = cub3D
 CC = cc
-LIBFT = ./lib/libft/libft.a
-MLX = ./lib/mlx/libmlx_Linux.a
-LIB = -L./lib/mlx -L./lib/libft -lft -lmlx_Linux -lXext -lX11 -lm
+LIBFT = ./libft/libft.a
+MLX = ./minilibx-linux/libmlx_Linux.a
+LIB = -L./minilibx-linux -L./libft -lft -lmlx_Linux -lXext -lX11 -lm
 SRC_PATH = src/
 OBJ_PATH = obj/
-bonus_PATH = bonus/
 CFLAGS = -Wall -Werror -Wextra -g
 DEBUG = -fsanitize=address
 DEBUG_T = -fsanitize=thread
@@ -51,10 +50,10 @@ $(OBJ_PATH)%.o:		$(SRC_PATH)%.c
 						@$(CC) $(INCS) $(CFLAGS) -c $< -o $@
 
 $(LIBFT):
-						@make -C ./lib/libft
+						@make -C ./libft
 
 $(MLX):
-						@make -C ./lib/mlx
+						@make -C ./minilibx-linux
 
 clean:
 						@$(RM) $(OBJ_PATH)
@@ -62,8 +61,8 @@ clean:
 
 fclean: 			clean
 						@$(RM) $(NAME)
-						@make -C ./lib/libft/ fclean
-						@make -C ./lib/mlx/ clean
+						@make -C ./libft fclean
+						@make -C ./minilibx-linux clean
 						@echo "$(CYAN)All executable files cleaned!$(DEF_COLOR)"
 
 re: 				fclean all

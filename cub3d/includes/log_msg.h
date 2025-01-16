@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   log_msg.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabdel-f <rabdel-f@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/16 08:46:53 by hkheired          #+#    #+#             */
+/*   Updated: 2025/01/16 12:03:56 by rabdel-f         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef LOG_MSG_H
 # define LOG_MSG_H
@@ -66,8 +77,8 @@
 # define ZERO			0
 # define PLANE			0.66
 
-# define MOV			0.6
-# define ROT			0.5
+# define MOV			0.4
+# define ROT			0.4
 
 # define KEY_ESC		65307
 # define LEFT			65361

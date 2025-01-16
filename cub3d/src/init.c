@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hkheired <hkheired@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/16 08:33:05 by hkheired          #+#    #+#             */
+/*   Updated: 2025/01/16 08:33:07 by hkheired         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../includes/cub.h"
 
@@ -51,8 +62,6 @@ void	get_screen_size(t_game *cub3d, void	*mlx, void	*win)
 	mlx_destroy_window(mlx, win);
 	mlx_destroy_display(mlx);
 	free(mlx);
-	cub3d->game_w /= 2;
-	cub3d->game_h /= 2;
 }
 //init_player() function initializes the player structure, 
 //setting up the player's direction and view plane. The player’s

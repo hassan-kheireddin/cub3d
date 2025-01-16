@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cub.h                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabdel-f <rabdel-f@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/16 12:03:44 by rabdel-f          #+#    #+#             */
+/*   Updated: 2025/01/16 12:03:46 by rabdel-f         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef CUB_H
 # define CUB_H
@@ -8,8 +19,8 @@
 # include <limits.h>
 # include <math.h>
 # include "log_msg.h"
-# include "../lib/libft/libft.h"
-# include "../lib/mlx/mlx.h"
+# include "../libft/libft.h"
+# include "../minilibx-linux/mlx.h"
 
 # define PI 3.14159265358979323846
 

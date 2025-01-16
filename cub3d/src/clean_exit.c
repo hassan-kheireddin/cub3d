@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   clean_exit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hkheired <hkheired@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/16 08:32:52 by hkheired          #+#    #+#             */
+/*   Updated: 2025/01/16 08:32:54 by hkheired         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../includes/cub.h"
 
@@ -75,7 +86,7 @@ int	end_game(t_game *game)
 	mlx_destroy_display(game->mlx);
 	free(game->mlx);
 	clean_parse(game);
-	printf("\n	Thank you for playing our cub3D maze!\n\n");
+	printf("\n	\033[0;91mThank you for playing our cub3D maze!\033[0m\n\n");
 	exit(EXIT_SUCCESS);
 }
 
